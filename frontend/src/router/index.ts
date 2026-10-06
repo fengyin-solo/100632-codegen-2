@@ -19,6 +19,9 @@ const Energy = () => import('@/views/energy/index.vue')
 const Device = () => import('@/views/device/index.vue')
 const Entryapprove = () => import('@/views/entryapprove/index.vue')
 const Duty = () => import('@/views/duty/index.vue')
+const Fee = () => import('@/views/fee/index.vue')
+const Review = () => import('@/views/review/index.vue')
+const Careledger = () => import('@/views/careledger/index.vue')
 
 const router = createRouter({
   history: createWebHistory(),
@@ -42,6 +45,9 @@ const router = createRouter({
     { path: '/device', name: 'device', component: Device },
     { path: '/entryapprove', name: 'entryapprove', component: Entryapprove },
     { path: '/duty', name: 'duty', component: Duty },
+    { path: '/fee', name: 'fee', component: Fee },
+    { path: '/review', name: 'review', component: Review },
+    { path: '/careledger', name: 'careledger', component: Careledger },
   ],
 })
 

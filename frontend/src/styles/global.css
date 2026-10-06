@@ -35,3 +35,61 @@ body { margin: 0; background: #f6f8fb; color: #1f2937; }
 .error-text { color: #b42318; }
 .status-legend { display: flex; flex-wrap: wrap; gap: 12px; margin: 0 0 10px; font-size: 12px; color: var(--muted); }
 .legend-item { background: #eef2f7; border-radius: 999px; padding: 2px 10px; }
+
+/* 结算/复核/台账专项 */
+.crew-switch { margin-left: 12px; }
+.crew-switch select { padding: 2px 4px; }
+.perm-banner { border-radius: 6px; padding: 8px 12px; font-size: 13px; margin-bottom: 12px; border: 1px solid; }
+.perm-banner.ok { background: #ecfdf3; border-color: #73e2a3; color: #067647; }
+.perm-banner.lock { background: #fff7ed; border-color: #fdba74; color: #b45309; }
+.workbench { display: flex; gap: 12px; margin-bottom: 12px; }
+.workbench .panel { flex: 1; }
+.panel { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; margin-bottom: 12px; }
+.panel.warn { background: #fffbeb; border-color: #fcd34d; }
+.panel h3 { margin: 0 0 10px; font-size: 14px; }
+.panel-head { display: flex; justify-content: space-between; align-items: center; }
+.inline-form { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.hint { color: var(--muted); font-size: 12px; margin: 8px 0 0; }
+.file-btn { position: relative; cursor: pointer; }
+.file-btn.disabled { opacity: .55; cursor: not-allowed; }
+.file-btn input[type="file"] { position: absolute; inset: 0; opacity: 0; cursor: pointer; pointer-events: none; }
+.file-btn:not(.disabled) input[type="file"] { pointer-events: auto; }
+.checkline { display: flex; align-items: center; gap: 4px; font-size: 13px; }
+.result-banner { border-radius: 6px; padding: 8px 12px; font-size: 13px; margin: 0 0 12px; border: 1px solid; }
+.result-banner.ok { background: #ecfdf3; border-color: #73e2a3; color: #067647; }
+.result-banner.err { background: #fef3f2; border-color: #fda29b; color: #b42318; }
+.tag { display: inline-block; border-radius: 999px; padding: 2px 10px; font-size: 12px; background: #eef2f7; color: #475569; white-space: nowrap; }
+.tag.待对账 { background: #eff6ff; color: #1d4ed8; }
+.tag.已结清 { background: #ecfdf3; color: #067647; }
+.tag.欠费 { background: #fef3f2; color: #b42318; }
+.tag.已作废 { background: #f1f5f9; color: #94a3b8; }
+.fee-chip { display: inline-block; background: #f1f5f9; border-radius: 4px; padding: 1px 6px; margin: 1px 4px 1px 0; font-size: 12px; white-space: nowrap; }
+.fee-chip.warn { background: #fef3c7; }
+.data-table td.num, .data-table th.num { text-align: right; font-variant-numeric: tabular-nums; }
+.data-table tr.voided td { color: #94a3b8; background: #fafafa; }
+.data-table tr.arrears td { background: #fff7f6; }
+.data-table tr.unmatched td { background: #fffbeb; }
+.data-table tr.done td { background: #f6fef9; }
+.data-table tr.released td { color: #94a3b8; }
+.data-table tr.newrow td { background: #fff7ed; }
+td.diff, td .diff { color: #b42318; font-weight: 600; }
+.reason-cell { min-width: 220px; font-size: 12px; line-height: 1.5; }
+.stat-card.alert { border-color: #fda29b; background: #fff7f6; }
+.legend { display: flex; gap: 8px; }
+.modal-mask { position: fixed; inset: 0; background: rgba(15, 23, 42, .45); display: flex; align-items: center; justify-content: center; z-index: 50; padding: 24px; }
+.modal { background: #fff; border-radius: 10px; width: min(760px, 100%); max-height: 88vh; overflow: auto; padding: 18px 20px; }
+.modal.wide { width: min(900px, 100%); }
+.modal-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+.modal-head h3 { margin: 0; font-size: 15px; }
+.detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 16px; margin: 0 0 12px; }
+.detail-grid .full { grid-column: 1 / -1; }
+.detail-grid dt { color: var(--muted); font-size: 12px; }
+.detail-grid dd { margin: 2px 0 6px; font-size: 13px; }
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 14px; }
+.form-grid label.full, .form-grid .full { grid-column: 1 / -1; }
+.form-grid span { display: block; font-size: 12px; color: var(--muted); margin-bottom: 2px; }
+.form-grid input, .form-grid textarea, .form-grid select { width: 100%; padding: 6px 8px; border: 1px solid var(--border); border-radius: 6px; font: inherit; }
+.modal-actions { display: flex; justify-content: flex-end; gap: 10px; margin-top: 14px; }
+.linked-box { margin-top: 12px; background: #f8fafc; border: 1px dashed var(--border); border-radius: 6px; padding: 8px 12px; font-size: 12px; }
+.linked-box ul { margin: 6px 0 0; padding-left: 18px; }
+select { padding: 5px 6px; border: 1px solid var(--border); border-radius: 6px; background: #fff; }
