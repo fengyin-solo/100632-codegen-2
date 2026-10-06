@@ -19,6 +19,11 @@ const Energy = () => import('@/views/energy/index.vue')
 const Device = () => import('@/views/device/index.vue')
 const Entryapprove = () => import('@/views/entryapprove/index.vue')
 const Duty = () => import('@/views/duty/index.vue')
+const FeeSettlement = () => import('@/views/fee/index.vue')
+const FeeContracts = () => import('@/views/fee/contracts.vue')
+const FeeInbox = () => import('@/views/fee/inbox.vue')
+const FeeMaintenance = () => import('@/views/fee/maintenance.vue')
+const PipelineReview = () => import('@/views/pipeline-review/index.vue')
 
 const router = createRouter({
   history: createWebHistory(),
@@ -42,6 +47,11 @@ const router = createRouter({
     { path: '/device', name: 'device', component: Device },
     { path: '/entryapprove', name: 'entryapprove', component: Entryapprove },
     { path: '/duty', name: 'duty', component: Duty },
+    { path: '/fee', name: 'fee', component: FeeSettlement },
+    { path: '/fee/contracts', name: 'fee-contracts', component: FeeContracts },
+    { path: '/fee/inbox', name: 'fee-inbox', component: FeeInbox },
+    { path: '/fee/maintenance', name: 'fee-maintenance', component: FeeMaintenance },
+    { path: '/pipeline-review', name: 'pipeline-review', component: PipelineReview },
   ],
 })
 
